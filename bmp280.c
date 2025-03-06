@@ -8,6 +8,8 @@
 #include "i2c_bus.h"
 #include "bmp280.h"
 #include "math.h"
+#include "freertos/FreeRTOS.h"
+#include "esp_log.h"
 
 bmp280_handle_t bmp280_create(i2c_bus_handle_t bus, uint8_t dev_addr)
 {
